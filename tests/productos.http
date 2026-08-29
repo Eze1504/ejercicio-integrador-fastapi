@@ -1,0 +1,27 @@
+### Crear producto
+POST http://127.0.0.1:8000/productos/
+Content-Type: application/json
+
+{
+  "nombre": "Teclado",
+  "precio": 25000,
+  "stock": 2,
+  "stock_minimo": 3
+}
+
+
+### Listar productos
+GET http://127.0.0.1:8000/productos/
+
+
+### Actualizar producto
+PUT http://127.0.0.1:8000/productos/1
+Content-Type: application/json
+
+{
+  "stock": 10
+}
+
+
+### Consultar alerta de stock
+GET http://127.0.0.1:8000/productos/1/alerta-stock
